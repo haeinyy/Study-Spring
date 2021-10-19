@@ -1,0 +1,10 @@
+package com.ssafy.hello.di;
+
+public class HelloImpl implements Hello {
+
+	@Override
+	public void sayHello(String name) {
+
+	}
+
+}

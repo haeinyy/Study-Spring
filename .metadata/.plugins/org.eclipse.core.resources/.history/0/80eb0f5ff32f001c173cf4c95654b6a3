@@ -1,0 +1,13 @@
+package com.ssafy.di.log;
+
+import org.springframework.stereotype.Component;
+
+@Component("dblog")
+public class DbLogImpl implements Log {
+
+	@Override
+	public void info(String log) {
+		System.out.println("DB Log : "+log);
+	}
+
+}

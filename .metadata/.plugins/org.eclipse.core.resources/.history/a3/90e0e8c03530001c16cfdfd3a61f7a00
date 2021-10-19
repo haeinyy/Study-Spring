@@ -1,0 +1,16 @@
+package com.ssafy.hw2.model;
+
+import org.apache.commons.lang3.builder.ToStringBuilder;
+
+public class CateVO {
+	
+	private int sep;
+	private String item_code;
+	private String item_name;
+	private int item_price;
+	private String item_corp;
+	private char item_stat;
+	private String dt_reg;
+	private int cate_seq;
+	
+}

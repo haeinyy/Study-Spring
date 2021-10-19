@@ -1,0 +1,6 @@
+package com.ssafy.sf_1di_1xml.log;
+
+public interface Log {
+	
+	void info(String log);
+}

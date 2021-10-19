@@ -1,0 +1,10 @@
+package com.ssafy.sf_1di_1xml.log;
+
+public class DbLogImpl implements Log {
+
+	@Override
+	public void info(String log) {
+		System.out.println("DB Log : "+log);
+	}
+
+}
