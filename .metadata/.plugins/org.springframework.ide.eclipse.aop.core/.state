@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
+<aop-project name="spring_webmvc"/>
 <aop-project name="sf_1di_2anno"/>
 <aop-project name="ws_framework_1"/>
 <aop-project name="spring_di2_annotation"/>

@@ -29,11 +29,17 @@
 	
 	<!-- !중요! -->
 	<!-- <bean id="calc" class="com.ssafy.di.calc.CalcImpl">
-		<property name="log">
+		<property name="abcLog">
 			<ref bean="dblog"/>
 		</property>
 	</bean> -->
 	
+	<!-- !중요! 이게 제일 많이 사용! -->
+	<!-- <bean id="calc" class="com.ssafy.di.calc.CalcImpl">
+		<property name="abcLog" ref="dblog"/>
+	</bean> -->
+	
+	<!-- 축약형! -->
 	<!-- get/set method 이름기준으로 property 이름 정해짐! -->
 	<bean id="calc" class="com.ssafy.di.calc.CalcImpl" p:abcLog-ref="mylog"/>
 </beans>

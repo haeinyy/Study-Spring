@@ -16,6 +16,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/haein/SSAFY/cd/spring/spring_webmvc_배포"/>
 			<item value="/Users/haein/git/spring_hw_1_2"/>
 			<item value="/Users/haein/SSAFY/work_spring/spring_di2_annotation"/>
 			<item value="/Users/haein/SSAFY/work_spring/spring_di1_xml"/>
