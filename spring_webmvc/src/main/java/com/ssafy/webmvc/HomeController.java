@@ -17,6 +17,7 @@ import com.ssafy.webmvc.model.ParameterDto;
 import com.ssafy.webmvc.model.service.HelloService;
 
 @Controller
+//@RequestMapping("/") 컨트롤러 자체를 경로 지정해줄수 있음 => 컨트롤러가 여러개 일수 있음
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);

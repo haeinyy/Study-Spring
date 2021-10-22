@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=hellospringdi/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.hello.di{Hello.java[Hello" modifiers="513" timestamp="1634264165000"/>
-<typeInfo handle="=sf_1di_1xml/\/Users\/haein\/.m2\/repository\/org\/slf4j\/jcl-over-slf4j\/1.7.32\/jcl-over-slf4j-1.7.32.jar=/maven.pomderived=/true=/=/org.eclipse.jst.component.dependency=/\/WEB-INF\/lib=/=/maven.pomderived=/true=/=/test=/true=/=/org.eclipse.jst.component.archivename=/jcl-over-slf4j-1.7.32.jar=/=/maven.groupId=/org.slf4j=/=/maven.artifactId=/jcl-over-slf4j=/=/maven.version=/1.7.32=/=/maven.scope=/runtime=/&lt;org.apache.commons.logging(Log.class[Log" modifiers="1537" timestamp="1634262801000"/>
+<typeInfo handle="=spring_hw_1_2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.hw.model.service{ProductService.java[ProductService" modifiers="513" timestamp="1634832152000"/>
+<typeInfo handle="=spring_hw_1_2/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.hw.model.repo{ProductRepo.java[ProductRepo" modifiers="513" timestamp="1634832443000"/>
+<typeInfo handle="=moviesf_ds/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.repo{UserRepo.java[UserRepo" modifiers="513" timestamp="1634864066000"/>
+<typeInfo handle="=moviesf_ds/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.repo{MovieRepo.java[MovieRepo" modifiers="513" timestamp="1634867426000"/>
+<typeInfo handle="=moviesf_ds/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.service{UserService.java[UserService" modifiers="513" timestamp="1634868774000"/>
+<typeInfo handle="=moviesf_ds/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.service{MovieService.java[MovieService" modifiers="513" timestamp="1634868770000"/>
 </typeInfoHistroy>

@@ -1,0 +1,8 @@
+.container {width:500px;}
+.table {width:auto;}
+.table tr td {width:125px;height:125px;padding:0;text-align:center;vertical-align:middle;}
+.table tr td > img {display:none;width:100%;}
+.table tr .on > img, .table tr .match > img {display:block;}
+.table tr td::before {content:'?';font-size:20px;font-weight:bold;}
+.table tr .on::before, .table tr .match::before {display:none;}
+.ready-state {width:469px;height:269px;}

@@ -9,7 +9,9 @@ public class GuestBookServiceImpl implements GuestBookService {
 	
 	private GuestBookDao guestBookDao;
 	
+	// GuestBookService는 GuestBookDao가 필요한데 여기서 생성하지 않고 
 	// 어디선가(applicationContext.xml) 주입이 되어서 dao쓰고있음 
+	// property로 사용함 !
 	public void setGuestBookDao(GuestBookDao guestBookDao) {
 		this.guestBookDao = guestBookDao;
 	}

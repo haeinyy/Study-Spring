@@ -17,7 +17,7 @@ import com.ssafy.model.service.GuestBookServiceImpl;
 public class GuestBookMain {
 
 	public static void main(String[] args) throws IOException {
-//		com/ssafy/configuration/applicationContext.xml 설정
+//		ApplicationConfig.java 설정
 		ApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
 		
 		GuestBookService guestBookService = context.getBean("gbService", GuestBookServiceImpl.class);
