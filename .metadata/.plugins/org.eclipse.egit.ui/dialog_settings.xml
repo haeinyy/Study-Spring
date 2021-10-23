@@ -2,12 +2,14 @@
 <section name="Workbench">
 	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="2"/>
 	<list key="EGit.KnownHosts">
-		<item value="bitbucket.org"/>
-		<item value="github.com"/>
 		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
 		<item value="lab.ssafy.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://lab.ssafy.com/godls4402/spring_hw_4_2"/>
+		<item value="https://lab.ssafy.com/godls4402/spring_ws_4_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_3_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_2_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_3_3"/>
