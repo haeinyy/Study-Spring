@@ -6,7 +6,7 @@
 		<item key="uncategorizedFilter" value="true"/>
 	</section>
 	<section name="ImportExportAction">
-		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.egit.ui.internal.clone.GitCloneWizard"/>
+		<item key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID" value="org.eclipse.ui.wizards.import.FileSystem"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.egit.ui.internal.clone.gitclonecategory"/>
@@ -16,6 +16,7 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/haein/SSAFY/cd/spring/framework_1025_배포/guestbook2_file_interceptor"/>
 			<item value="/Users/haein/SSAFY/cd/spring/framework_1021_배포/guestbook2_file_interceptor"/>
 			<item value="/Users/haein/SSAFY/cd/spring/framework_1021_배포/guestbook1_springmvc"/>
 			<item value="/Users/haein/SSAFY/cd/spring/spring_webmvc_배포"/>
@@ -27,8 +28,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard"/>
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="net.harawata.mybatipse.wizard.NewXmlMapperWizard"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="net.harawata.mybatipse.wizard.mybatisCategory"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
 	</section>

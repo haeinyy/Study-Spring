@@ -1,9 +1,0 @@
-package com.ssafy.configuration;
-
-import org.springframework.context.annotation.Configuration;
-
-// xml을 대신하는 설정하는 파일인것 알려주기
-@Configuration
-public class ApplicationConfig {
-
-}

@@ -8,14 +8,14 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="서"/>
+			<item value="pass"/>
+			<item value="error"/>
+			<item value="result"/>
 			<item value="sessionInterceptor"/>
 			<item value="s"/>
 			<item value="bookrepo"/>
 			<item value="servlet"/>
-			<item value="msg"/>
-			<item value="oper"/>
-			<item value="junit"/>
-			<item value="sf_1di_1xml"/>
 		</list>
 		<list key="replacehistory">
 			<item value="bookRepo"/>

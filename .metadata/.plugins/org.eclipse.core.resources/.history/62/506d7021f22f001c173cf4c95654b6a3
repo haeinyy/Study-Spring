@@ -1,6 +1,0 @@
-package com.ssafy.sf_1di_1xml.hello;
-
-public interface Hello {
-	
-	void sayHello(String name);
-}

@@ -16,59 +16,48 @@ public class Movie {
 		this.title = title;
 		this.price = price;
 		this.no = no;
-		this.name = name;
+		this.name = name; // foreign key 반드시 포함 !!!
 	}
-
 
 	public String getCode() {
 		return code;
 	}
 
-
 	public void setCode(String code) {
 		this.code = code;
 	}
-
 
 	public String getTitle() {
 		return title;
 	}
 
-
 	public void setTitle(String title) {
 		this.title = title;
 	}
-
 
 	public int getPrice() {
 		return price;
 	}
 
-
 	public void setPrice(int price) {
 		this.price = price;
 	}
-
 
 	public String getNo() {
 		return no;
 	}
 
-
 	public void setNo(String no) {
 		this.no = no;
 	}
-
 
 	public String getName() {
 		return name;
 	}
 
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
 
 	@Override
 	public String toString() {
@@ -77,5 +66,4 @@ public class Movie {
 				.append(", no=").append(no).append(", name=").append(name).append("]");
 		return builder.toString();
 	}
-	
 }

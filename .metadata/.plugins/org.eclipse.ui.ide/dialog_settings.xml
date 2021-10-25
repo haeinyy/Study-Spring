@@ -128,6 +128,7 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="/Users/haein/SSAFY/cd/spring/movie_ds_ex.zip"/>
 			<item value="/Users/haein/SSAFY/cd/spring/ws_framework_4.zip"/>
 		</list>
 	</section>

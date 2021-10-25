@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.guestbook.model.dao.GuestBookDao">
+	<!-- 공통적인 sql문 빼기 -->
+	<sql id="searchcondition">
+		<if test="word !=null and word !=''">
+			<if test="key==subject">
+				and subject like concat('%',#{word},'%');
+			</if>
+			<if test="key!=subject">
+				and ${key}=#{word} <!-- $ : property값을 직접적으로 query문에 넣을때 -->
+			</if>
+		</if>
+	</sql>
+
+	<select id="listArticle" parameterType="map" resultType="guestbook">
+		select g.articleno, g.userid, g.subject, g.content, g.regtime, m.username
+		from guestbook g, ssafy_member m 
+		where g.userid = m.userid
+		<include refid="searchcondition"></include>
+		order by g.articleno desc
+		limit #{start}, #{spp}
+	</select>
+	
+	<select id="getTotalCount" parameterType="map" resultType="int">
+		select count(articleno)
+		from guestbook
+		where 1=1
+		<include refid="searchcondition"></include>
+	</select>
+</mapper>
