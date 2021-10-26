@@ -27,7 +27,11 @@ public class GuestBookServiceImpl implements GuestBookService {
 	@Override
 	public List<GuestBookDto> listArticle(Map<String, String> map) throws Exception {
 		Map<String, Object> param = new HashMap<String, Object>();
-		param.put("key", map.get("key") == null ? "" : map.get("key"));
+		String key = map.get("key");
+		if("userid".equals(key)) {
+			key = "g.userid"; // list 일떄만 앞에 alias g. 처리해주기 
+		}
+		param.put("key", map.get("key") == null ? "" : key);
 		param.put("word", map.get("word") == null ? "" : map.get("word"));
 		int currentPage = Integer.parseInt(map.get("pg") == null ? "1" : map.get("pg"));
 		int sizePerPage = Integer.parseInt(map.get("spp"));

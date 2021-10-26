@@ -3,19 +3,46 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.ssafy.guestbook.model.dao.GuestBookDao">
+
+	<insert id="registerArticle" parameterType="guestbook">
+		insert into guestbook (userid, subject, content, regtime)
+		values (#{userId}, #{subject}, #{content}, now())
+		<selectKey resultType="int" keyProperty="articleNo" order="AFTER">
+			select last_insert_id() <!-- 바로 등록한 글번호 넣어와서 keyPropety에 넣어줌 -->
+		</selectKey>
+	</insert>
+	
+	<insert id="reigsterFile" parameterType="guestbook">
+		insert into file_info (articleno, savefolder, originfile, savefile)
+		values
+		<foreach collection="fileInfos" item="fileinfo" separator=",">
+			(#{articleNo}, #{fileinfo.saveFolder}, #{fileinfo.originFile}, #{fileinfo.saveFile})
+		</foreach>
+	</insert>
+	
+	<resultMap type="guestbook" id="articleList">
+		<result column="articleno" property="articleNo"/>
+		<result column="userid" property="userId"/>
+		<result column="subject" property="subject"/>
+		<result column="content" property="content"/>
+		<result column="regtime" property="regTime"/>
+		<result column="username" property="userName"/>
+		<collection property="fileInfos" column="articleno" javaType="list" ofType="fileinfo" select="fileInfoList" />
+	</resultMap>
+
 	<!-- 공통적인 sql문 빼기 -->
 	<sql id="searchcondition">
 		<if test="word !=null and word !=''">
-			<if test="key==subject">
+			<if test="key=='subject'">
 				and subject like concat('%',#{word},'%');
 			</if>
-			<if test="key!=subject">
+			<if test="key!='subject'">
 				and ${key}=#{word} <!-- $ : property값을 직접적으로 query문에 넣을때 -->
 			</if>
 		</if>
 	</sql>
 
-	<select id="listArticle" parameterType="map" resultType="guestbook">
+	<select id="listArticle" parameterType="map" resultMap="articleList">
 		select g.articleno, g.userid, g.subject, g.content, g.regtime, m.username
 		from guestbook g, ssafy_member m 
 		where g.userid = m.userid
@@ -24,10 +51,41 @@
 		limit #{start}, #{spp}
 	</select>
 	
+	<select id="fileInfoList" resultType="fileinfo">
+		select savefolder, originfile, savefile
+		from file_info
+		where articleno = #{articleno}
+	</select>
+	
 	<select id="getTotalCount" parameterType="map" resultType="int">
 		select count(articleno)
 		from guestbook
-		where 1=1
-		<include refid="searchcondition"></include>
+		<where>
+			<include refid="searchcondition"></include>
+		</where>
 	</select>
+	
+	<select id="getArticle" parameterType="int" resultType="guestbook">
+		select articleno, subject, content
+		from guestbook
+		where articleno = #{articleno}
+	</select>
+	
+	<update id="updateArticle" parameterType="guestbook">
+		update guestbook
+		set subject = #{subject}, content = #{content}
+		where articleno = #{articleNo}
+	</update>
+	
+	
+	<!-- 자식에 file이 있으므로 file 먼저 지우고 글 지우기 -->
+	<delete id="deleteFile" parameterType="int">
+		delete from file_info
+		where articleno = #{articleno}
+	</delete>
+	
+	<delete id="deleteArticle" parameterType="int">
+		delete from guestbook
+		where articleno = #{articleno}
+	</delete>
 </mapper>

@@ -7,6 +7,7 @@
 	<typeAliases>
 		<typeAlias type="com.ssafy.guestbook.model.MemberDto" alias="member"/>
 		<typeAlias type="com.ssafy.guestbook.model.GuestBookDto" alias="guestbook"/>
+		<typeAlias type="com.ssafy.guestbook.model.FileInfoDto" alias="fileinfo"/>
 	</typeAliases>
 
 	<environments default="development"> 

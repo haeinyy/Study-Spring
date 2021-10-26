@@ -17,7 +17,14 @@ public class GuestBookDaoImpl implements GuestBookDao {
 
 	@Override
 	public void registerArticle(GuestBookDto guestBookDto) throws Exception {
-
+		try (SqlSession sqlSession = SqlMapConfig.getSqlSession()) {
+			sqlSession.insert(NAMESPACE+"registerArticle", guestBookDto);
+			List<FileInfoDto> fileInfos = guestBookDto.getFileInfos();
+			if(fileInfos != null && !fileInfos.isEmpty()) { // 파일 업로드를 했다
+				sqlSession.insert(NAMESPACE+"reigsterFile", guestBookDto);
+			}
+			sqlSession.commit();
+		}
 	}
 
 	@Override
@@ -36,22 +43,33 @@ public class GuestBookDaoImpl implements GuestBookDao {
 
 	@Override
 	public GuestBookDto getArticle(int articleNo) throws Exception {
-		return null;
+		try (SqlSession sqlSession = SqlMapConfig.getSqlSession()) {
+			return sqlSession.selectOne(NAMESPACE+"getArticle", articleNo);
+		}
 	}
 
 	@Override
 	public void updateArticle(GuestBookDto guestBookDto) throws Exception {
-
+		try (SqlSession sqlSession = SqlMapConfig.getSqlSession()) {
+			sqlSession.selectOne(NAMESPACE+"updateArticle", guestBookDto);
+			sqlSession.commit();
+		}
 	}
 
 	@Override
 	public void deleteArticle(int articleNo) throws Exception {
-
+		try (SqlSession sqlSession = SqlMapConfig.getSqlSession()) {
+			sqlSession.selectOne(NAMESPACE+"deleteFile", articleNo);
+			sqlSession.selectOne(NAMESPACE+"deleteArticle", articleNo);
+			sqlSession.commit();
+		}
 	}
 
 	@Override
 	public List<FileInfoDto> fileInfoList(int articleNo) throws Exception {
-		return null;
+		try (SqlSession sqlSession = SqlMapConfig.getSqlSession()) {
+			return sqlSession.selectList(NAMESPACE+"fileInfoList", articleNo);
+		}
 	}
 
 }
