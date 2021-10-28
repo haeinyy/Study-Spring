@@ -2,12 +2,15 @@
 <section name="Workbench">
 	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="2"/>
 	<list key="EGit.KnownHosts">
-		<item value="git.eclipse.org"/>
-		<item value="github.com"/>
 		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
 		<item value="lab.ssafy.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://lab.ssafy.com/godls4402/spring_ws_7_3"/>
+		<item value="https://lab.ssafy.com/godls4402/spring_ws_6_3"/>
+		<item value="https://lab.ssafy.com/godls4402/spring_ws_5_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_4_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_4_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_3_2"/>
@@ -15,7 +18,6 @@
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_3_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_2_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_1_2"/>
-		<item value="https://lab.ssafy.com/godls4402/spring_ws_1_3"/>
 	</list>
 	<list key="CommitDialog.authorValues">
 		<item value="haeinyy &lt;godls4402@gmail.com&gt;"/>

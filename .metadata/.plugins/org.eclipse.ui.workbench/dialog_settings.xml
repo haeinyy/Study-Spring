@@ -16,6 +16,8 @@
 		<item key="WizardFileSystemResourceImportPage1.STORE_OVERWRITE_EXISTING_RESOURCES_ID" value="false"/>
 		<item key="WizardFileSystemResourceImportPage1.STORE_CREATE_CONTAINER_STRUCTURE_ID" value="false"/>
 		<list key="WizardFileSystemResourceImportPage1.STORE_SOURCE_NAMES_ID">
+			<item value="/Users/haein/SSAFY/cd/spring/guestbook5_restapi_배포"/>
+			<item value="/Users/haein/SSAFY/cd/spring/live_guestbook3_mybatis_배포"/>
 			<item value="/Users/haein/SSAFY/cd/spring/framework_1025_배포/guestbook2_file_interceptor"/>
 			<item value="/Users/haein/SSAFY/cd/spring/framework_1021_배포/guestbook2_file_interceptor"/>
 			<item value="/Users/haein/SSAFY/cd/spring/framework_1021_배포/guestbook1_springmvc"/>
@@ -33,5 +35,7 @@
 			<item value="net.harawata.mybatipse.wizard.mybatisCategory"/>
 			<item value="org.eclipse.wst.web.ui"/>
 		</list>
+	</section>
+	<section name="ZipFileImportWizard">
 	</section>
 </section>
