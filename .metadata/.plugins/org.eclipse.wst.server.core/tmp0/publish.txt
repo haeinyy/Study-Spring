@@ -1,4 +1,2 @@
 #Tomcat publish data
-#Thu Oct 28 11:25:12 KST 2021
-org.eclipse.jst.jee.server\:/binary\:/Users/haein/.m2/repository/org/springframework/spring-web/5.3.11/spring-web-5.3.11.jar=WEB-INF/lib/spring-web-5.3.11.jar
-org.eclipse.jst.jee.server\:/binary\:/Users/haein/.m2/repository/org/springframework/spring-web/5.3.9/spring-web-5.3.9.jar=WEB-INF/lib/spring-web-5.3.9.jar
+#Fri Oct 29 00:42:43 KST 2021

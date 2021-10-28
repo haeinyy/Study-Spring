@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
-@ControllerAdvice
+//@ControllerAdvice // 최종 실행할때 주석처리
 public class ExceptionControllerAdvice {
 
 	private Logger logger = LoggerFactory.getLogger(ExceptionControllerAdvice.class);

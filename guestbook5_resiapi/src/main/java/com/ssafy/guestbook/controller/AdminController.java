@@ -5,29 +5,35 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.ssafy.guestbook.model.MemberDto;
 import com.ssafy.guestbook.model.service.MemberService;
 
-@Controller
+@RestController // @RestquesBody 자동설정
 @RequestMapping("/admin")
 @CrossOrigin("*")
+//@CrossOrigin(origins = {"http://localhost:8000","http://www.kakao.com"})
 public class AdminController {
 
 	private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
 	
 	@Autowired
 	private MemberService memberService;
-
+	/*
+//	@CrossOrigin(origins = {"http://localhost:8000"})
 	@RequestMapping(value = "/user", method = RequestMethod.GET, headers = { "Content-type=application/json" })
-	public @ResponseBody List<MemberDto> userList() throws Exception {
+	public List<MemberDto> userList() throws Exception {
 		List<MemberDto> list = memberService.listMember();
 		logger.debug("회원목록 : {}", list);
 		return list;
@@ -56,15 +62,16 @@ public class AdminController {
 		memberService.deleteMember(userid);
 		return memberService.listMember();
 	}
+	*/
 
-/*
+	// 조건에 따라서 어떤 상태인지 확인가능하고 예외처리 가능
 	@GetMapping(value = "/user")
 	public ResponseEntity<List<MemberDto>> userList() throws Exception {
 		List<MemberDto> list = memberService.listMember();
 		if(list != null && !list.isEmpty()) {
-//			return new ResponseEntity<List<MemberDto>>(list, HttpStatus.OK);
-//			return new ResponseEntity<List<MemberDto>>(HttpStatus.NOT_FOUND);
-			return new ResponseEntity<List<MemberDto>>(HttpStatus.INTERNAL_SERVER_ERROR);
+			return new ResponseEntity<List<MemberDto>>(list, HttpStatus.OK); // 200
+//			return new ResponseEntity<List<MemberDto>>(HttpStatus.NOT_FOUND); // 404 에러 
+//			return new ResponseEntity<List<MemberDto>>(HttpStatus.INTERNAL_SERVER_ERROR); // 500 에러 
 		} else {
 			return new ResponseEntity(HttpStatus.NO_CONTENT);
 		}
@@ -101,5 +108,5 @@ public class AdminController {
 		List<MemberDto> list = memberService.listMember();
 		return new ResponseEntity<List<MemberDto>>(list, HttpStatus.OK);
 	}
-*/
+
 }
