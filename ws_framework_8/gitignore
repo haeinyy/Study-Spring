@@ -1,0 +1,15 @@
+.project
+.classpath
+/bin/
+/out/
+/build/
+/target/
+/.gradle/
+/.apt_generated/
+/.settings/
+/.factorypath
+/.vscode/
+/.scannerwork/
+/.idea
+/WEBLOG_IS_UNDEFINED
+/src/main/generated/

@@ -8,14 +8,14 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="item_stat"/>
+			<item value="stat"/>
 			<item value="book"/>
 			<item value="books"/>
-			<item value="stat"/>
 			<item value="org.json"/>
 			<item value="dbcp"/>
 			<item value="서"/>
 			<item value="pass"/>
-			<item value="error"/>
 		</list>
 		<list key="replacehistory">
 			<item value="bookRepo"/>

@@ -111,6 +111,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/haein/git/spring_ws_8_3"/>
 			<item value="/Users/haein/git/spring_hw_6_2"/>
 			<item value="/Users/haein/git/spring_ws_5_3"/>
 			<item value="/Users/haein/git/spring_ws_4_3"/>
