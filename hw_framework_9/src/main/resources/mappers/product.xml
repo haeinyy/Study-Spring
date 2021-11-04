@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.hw.model.repo.ProductRepo">
+	<insert id="insert">
+		insert into product values (#{seq},#{item_code},#{item_name},#{item_price},#{img})
+	</insert>
+	
+	<update id="update">
+		update product set item_name=#{item_name}, item_price=#{item_price}, item_corp=#{item_corp}, where item_code=#{item_code}
+	</update>
+	
+	<delete id="delete">
+		delete from product where item_code=#{item_code}
+	</delete>
+	
+	<select id="select" resultType="Product">
+		select * from product where item_code=#{item_code}
+	</select>
+	
+	
+	<select id="search" resultType="Product">
+		select * from Product
+		<if test="key!='none'">
+			where ${key} like concat('%',#{word},'%')
+		</if>
+		<if test="orderBy!='none'">
+			order by ${orderBy} ${orderByDir}
+		</if>
+		<if test="limit">
+			limit #{offset},#{countPerPage}
+		</if>
+	</select>
+	
+	<select id="getTotalSearchCount" resultType="int">
+		select count(*) from Product
+		<if test="key!='none'">
+			where ${key} like concat('%',#{word},'%')
+		</if>
+	</select>
+</mapper>

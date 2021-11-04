@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=movie_prc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.repo{MovieRepo.java[MovieRepo" modifiers="513" timestamp="1635082435000"/>
-<typeInfo handle="=movie_prc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.repo{UserRepo.java[UserRepo" modifiers="513" timestamp="1635082436000"/>
-<typeInfo handle="=movie_prc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.service{MovieService.java[MovieService" modifiers="513" timestamp="1635085351000"/>
-<typeInfo handle="=movie_prc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.movie.model.service{UserService.java[UserService" modifiers="513" timestamp="1635085322000"/>
-<typeInfo handle="=SpringTest_서울_12반_이해인/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.phone.model.service{IPhoneService.java[IPhoneService" modifiers="513" timestamp="1635146794000"/>
-<typeInfo handle="=SpringTest_서울_12반_이해인/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.phone.model.dao{UserDAO.java[UserDAO" modifiers="513" timestamp="1635148376000"/>
-<typeInfo handle="=SpringTest_서울_12반_이해인/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.phone.model.service{UserService.java[UserService" modifiers="513" timestamp="1635148758000"/>
+<typeInfo handle="=HappyHouse_Spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.happyhouse.model.service{UserService.java[UserService" modifiers="513" timestamp="1635843483000"/>
 </typeInfoHistroy>

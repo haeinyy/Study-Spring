@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="2"/>
+	<item key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel" value="0"/>
 	<list key="EGit.KnownHosts">
 		<item value="bitbucket.org"/>
 		<item value="github.com"/>
@@ -8,16 +8,16 @@
 		<item value="lab.ssafy.com"/>
 	</list>
 	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://lab.ssafy.com/godls4402/happyhousealgo.git"/>
+		<item value="https://lab.ssafy.com/godls4402/happyhousespring.git"/>
+		<item value="https://lab.ssafy.com/godls4402/spring_hw_9_2"/>
+		<item value="https://lab.ssafy.com/godls4402/spring_ws_9_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_8_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_8_3"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_7_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_6_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_hw_5_2"/>
 		<item value="https://lab.ssafy.com/godls4402/spring_ws_7_3"/>
-		<item value="https://lab.ssafy.com/godls4402/spring_ws_6_3"/>
-		<item value="https://lab.ssafy.com/godls4402/spring_ws_5_3"/>
-		<item value="https://lab.ssafy.com/godls4402/spring_hw_4_2"/>
-		<item value="https://lab.ssafy.com/godls4402/spring_ws_4_3"/>
 	</list>
 	<list key="CommitDialog.authorValues">
 		<item value="haeinyy &lt;godls4402@gmail.com&gt;"/>
